@@ -1,0 +1,50 @@
+body {
+    background: #000;
+}
+
+.textDiv {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.textDiv span {
+    text-transform: uppercase;
+    display: block;
+}
+
+.text1 {
+    font-size: 60px;
+    letter-spacing: 8px;
+    margin-bottom: 30px;
+    color: rgba(184, 180, 179, 0.956);
+    background: #000;
+    position: relative;
+    animation: text 3s 1;
+}
+
+.text2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: rgb(53, 132, 74);
+}
+
+@keyframes text {
+    0% {
+        color: #000;
+        margin-bottom: -40px;
+    }
+
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
